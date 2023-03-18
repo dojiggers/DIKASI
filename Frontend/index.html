@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="modal.css">
+    <title>DIKASI</title>
+</head>
+<body class="bg-gradient-to-t from-white to-blue-800 bg-no-repeat">
+    <header>
+        <h1 class="text-5xl ml-36 mt-12 text-amber-400 font-semibold font-serif">DIKASI</h1>
+        <div class="flex float-right mr-36 space-x-60 text-amber-400 text-2xl mt-[-35px] cursor-pointer font-serif">
+            <a href="/Frontend/TOPIK/index.html"><p class="hover:text-yellow-600">TOPIK</p></a>
+            <p class="hover:text-yellow-600">FAQ</p>
+            <p class="hover:text-yellow-600">KONTAK</p>
+        </div>
+    </header>
+    <main class="mt-52 ml-36 mb-[380px]">
+        <h1 class="text-6xl font-sans mb-8"><span class="text-amber-400">DI</span>skusi edu<span class="text-amber-400">KASI</span></h1>
+        <button class="text-2xl font-semibold font-serif bg-yellow-300 p-3 px-10 rounded-xl" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Mulai</button>
+    </main>
+
+    <div id="id01" class="modal">
+    
+    <form class="modal-content animate rounded-2xl" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <div class="flex space-x-5">
+                <button class="text-2xl bg-slate-400 mt-4 mx-auto rounded-xl" type="submit"><span><img class="w-10 inline" src="" alt="" srcset=""></span>Login</button>
+                <button class="text-2xl bg-slate-400 mt-4 mx-auto rounded-xl" type="submit"><span><img class="w-10 inline bg-inherit" src="" alt="" srcset=""></span>SignUp</button>
+                <button class="text-2xl bg-slate-400 mt-4 mx-auto rounded-xl" type="submit"><span><img class="w-10 inline bg-inherit" src="" alt="" srcset=""></span>SignUp with Google</button>
+            </div>    
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

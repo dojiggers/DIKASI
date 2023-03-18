@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DIKASI</title>
+</head>
+<body class="bg-gradient-to-t from-white to-blue-600 bg-no-repeat h-screen overflow-y-auto bg-fixed">
+    <div class="bg-white fixed w-[100%] flex h-20 m-auto py-5 space-x-10">
+        <h1 class="text-4xl ml-48 pl-3 pt-[-20px] pb-2 pr-3 font-serif font-semibold text-amber-500 bg-white rounded-xl">DIKASI</h1>
+        <a href="/Frontend/DASHBOARD/index.html"><img class="w-[70px] px-4 inline" src="/Frontend/TOPIK/png/home-icon.png" alt=""></a>
+        <a href="#"><img class="w-10 h-10" src="/Frontend/TOPIK/png/group-icon.png" alt=""></a>
+        <a href="#"><img class="w-10 h-10" src="/Frontend/TOPIK/png/notif-icon.png" alt=""></a>
+        <input id="simple-search" type="text" placeholder="🔎Cari" class="border w-[600px] p-2 rounded-xl font-serif text-xl">
+        <button type="submit" class="text-white bottom-2 left-[-200px] bg-yellow-600 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">Search</button>
+    </div>
+    <div class="flex mb-[2000px]">
+        <div class="flex-col fixed">
+            <div class="ml-48 mt-24 bg-white rounded-xl pr-10 pb-8">
+                <a href="/Frontend/Matematika/index.html"><h1 class="text-xl font-serif font-semibold ml-5 pt-5"><span><img href="#" class="inline w-12 pr-2" src="/Frontend/TOPIK/png/math-icon.png" alt=""></span>Matematika</h1></a>
+                <a href="#" target="_blank"><h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/biology-icon.png" alt=""></span>Biologi</h1></a>
+                <a href="#" target="_blank"><h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/chem-icon.png" alt=""></span>Kimia</h1></a>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/economy-icon.png" alt=""></span>Ekonomi</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/geo-icon.png" alt=""></span>Geologi</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/sociology-icon.png" alt=""></span>Sosiologi</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/art-icon.png" alt=""></span>Kesenian</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/healthy-icon.png" alt=""></span>Kesehatan</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/history-icon.png" alt=""></span>Sejarah</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/lang-icon.png" alt=""></span>Bahasa</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/philosophy-icon.png" alt=""></span>Filsafat</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/politic2-icon.png" alt=""></span>Politik</h1>
+                <h1 class="text-xl font-serif font-semibold ml-5"><span><img class="inline w-12 pr-2" src="/Frontend/TOPIK/png/psycho-icon.png" alt=""></span>Psikologi</h1>
+            </div>
+        </div>
+        <div class="ml-[450px] mt-[95px]">
+            <div class="bg-white w-[850px] h-28 rounded-xl flex-col">
+                <img class="inline w-12 float-left pt-1 pl-1" src="/Frontend/TOPIK/png/profile-icon.png" alt="">
+                <textarea class="bg-slate-300 w-[780px] h-14 mt-2 pl-2 pt-1 font-serif resize-none" id="inputTextarea" type="text" placeholder="Apa yang anda pikirkan!" id="myText" class="w-[850px] h-[65px] rounded-xl pl-2 pt-1 font-sans text-xl resize-none"></textarea>
+                <button class="block float-right pr-6 font-mono font-semibold active:text-gray-300" id="button" type="button">KIRIM</button>
+                <img class="inline w-8 ml-12" src="/Frontend/TOPIK/png/addImage-icon.png" alt=""><input type="file" id="img" name="img" accept="image/*">               
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
